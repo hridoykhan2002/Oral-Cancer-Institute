@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    transition: all ease-in-out .4s;
+}
+:root{
+    --bg-color: rgba(91, 167, 238, 0.925);
+}
+body{
+    scroll-behavior: smooth;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.fa-facebook{
+    color: #3b5998;
+}
+.fa-instagram{
+    color: #8a3ab9;
+}
+.fa-youtube{
+    color: 	#FF0000;
+}
+.section-p{
+    padding: 60px 60px;
+}
+button{
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(29, 123, 211);
+}
+/* header */
+header{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0, 0.3),rgba(0,0,0, 0.3)),url(images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+}   
+/* nav */
+nav{
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+}
+.logo img{
+    width: 250px;
+    height: 100px;
+}
+.addrees{
+    background-color: var(--bg-color);
+    padding: 20px;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    color: white;
+}
+.addrees p{
+    letter-spacing: 1px;
+}
+.header-icons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.header-icons i{
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #fff;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    border-radius: 100%;
+}
+/* hero */
+.hero h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-top: 100px;
+    color: white;
+    font-weight: bold;
+    padding-left: 60px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px green;
+    position: relative;
+}
+.hero h1::after{
+    content: "";
+    height: 2px;
+    width: 150px;
+    position: absolute;
+    background-color: red;
+    bottom: 0;
+    margin-left: -100px;
+}
+/* service */
+.intro{
+    padding: 100px 0;
+}
+.intro-header{
+    margin-bottom: 60px;
+}
+.intro-header h1{
+    text-align: center;
+    color: grey;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+.intro-header h1::after{
+    content: "";
+    height: 2px;
+    width: 150px;
+    position: absolute;
+    background-color: red;
+    bottom: 0;
+    margin-left: -100px;
+}
+.intro-header p{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    font-weight: normal;
+}
+.intro-data{
+    width: 80%;
+    margin: 0 auto;
+}
+.intro-data p{
+    letter-spacing: 1px;
+    text-align: center;
+}
+/* service */
+.service{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0, 0.3),rgba(0,0,0, 0.3)),url(images/service.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.service-header{
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+.service-header h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+.service-header h1::after{
+    content: "";
+    height: 2px;
+    width: 150px;
+    position: absolute;
+    background-color: red;
+    bottom: 0;
+    margin-left: -100px;
+}
+.service-header p{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font-weight: normal;
+}
+.service-data{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.service-subdata{
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--bg-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    cursor: pointer;
+}
+.service-subdata:hover{
+    background-color: rgb(56, 133, 204);
+}
+.service-subdata i{
+    font-size: 20px;
+    padding: 10px;
+}
+.service-subdata p{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px !important;
+}
+/* teams */
+.team-header{
+    margin-bottom: 60px;
+}
+.team-header h1{
+    text-align: center;
+    color: grey;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+.team-header h1::after{
+    content: "";
+    height: 2px;
+    width: 150px;
+    position: absolute;
+    background-color: red;
+    bottom: 0;
+    margin-left: -100px;
+}
+.team-header p{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    font-weight: normal;
+}
+.team-data{
+    display: flex;
+    justify-content: center;
+}
+.team-subdata{
+    margin: 20px;
+}
+.team-subdata img{
+    max-width: 250px;
+    cursor: pointer;
+}
+.team-subdata img:hover{
+    filter: brightness(83%);
+}
+.name{
+    text-transform: uppercase;
+    margin: 10px 0;
+    color: grey;
+    font-weight: bold;
+}
+.job-title{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.appointment-btns{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.appointment-btns button{
+    width: 220px;
+    height: 40px;
+    text-align: center;
+    padding: 1px;
+    border: none;
+    background-color: var(--bg-color);
+    color: white;
+    font-size: 16px;
+}
+/* about */
+.about{
+    min-height: 80vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0, 0.7),rgba(0,0,0, 0.7)),url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.about-header{
+    margin-bottom: 60px;
+}
+.about-header h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+.about-header h1::after{
+    content: "";
+    height: 2px;
+    width: 150px;
+    position: absolute;
+    background-color: red;
+    bottom: 0;
+    margin-left: -100px;
+}
+.about-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+.about-data p{
+    letter-spacing: 1px;
+    color: white;
+    text-align: center;
+}
+.read-btn{
+    width: 220px;
+    height: 40px;
+    text-align: center;
+    padding: 1px;
+    border: none;
+    background-color: var(--bg-color);
+    color: white;
+    font-size: 16px;
+    margin-top: 30px;
+}
+/* contact */
+.contact-header{
+    margin-bottom: 60px;
+}
+.contact-header h1{
+    text-align: center;
+    color: grey;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+.contact-header h1::after{
+    content: "";
+    height: 2px;
+    width: 150px;
+    position: absolute;
+    background-color: red;
+    bottom: 0;
+    margin-left: -100px;
+}
+.contact-header p{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    font-weight: normal;
+}
+.contact-data{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.contact-subdata{
+    flex-basis: 48%;
+}
+.contact-subdata iframe{
+    width: 90%;
+    min-height: 90vh;
+}
+
+.contact-subdata h3{
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+.contact-subdata h3 i{
+    margin-right: 10px;
+    font-size: 17px;
+}
+.contact-subdata p{
+    margin-top: 10px;
+}
+.form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.contact-decs{
+    margin-bottom: 30px;
+    width: 100%;
+}
+#name, #email, #phone{
+    width: 49%;
+    outline: none;
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 30px;
+    outline: none;
+}
+#message{
+    width: 100%;
+    outline: none;
+    padding: 5px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    outline: none;
+}
+.send-btn{
+    width: 220px;
+    height: 40px;
+    text-align: center;
+    padding: 1px;
+    border: none;
+    background-color: var(--bg-color);
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+}
